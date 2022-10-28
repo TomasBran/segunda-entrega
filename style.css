@@ -23,9 +23,23 @@ body{
 /* FIN CONFIGURACION DEL HEADER */
 
 
+/* CONFIGURACION DEL MAIN EN INDEX */
+
+.lane{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.lane:hover{
+    transform: scale(1.1);
+    background-color: rgba(240, 248, 255, 0.212);
+}
+
+
 /* CONFIGURACION DEL FOOTER*/
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     width: 100%;
     background-color: rgba(77, 77, 77, 0.349);  
