@@ -35,6 +35,30 @@ body{
     transform: scale(1.1);
     background-color: rgba(240, 248, 255, 0.212);
 }
+/* FIN CONFIGURACION DEL MAIN EN INDEX */
+
+.lane-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+.lane-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.items-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap:10px;
+    padding: 5px;
+    border: solid rgba(136, 136, 136, 0.767) 4px ;
+}
+
 
 
 /* CONFIGURACION DEL FOOTER*/
