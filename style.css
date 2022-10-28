@@ -1,0 +1,22 @@
+body{
+    background-image: url(images/lol-background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.navbar{
+    background-color: rgba(77, 77, 77, 0.349);
+}
+
+.lol-icon{
+    width: 3%;
+    margin-right: 10px;
+}
+
+.nav-link, .navbar-brand{
+    color: white;
+}
+
+
