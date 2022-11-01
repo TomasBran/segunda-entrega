@@ -115,6 +115,11 @@ footer{
 .redes{
     font-size: 180%;
 }
+
+.icon img:hover{
+    transform: scale(1.25);
+}
+
 /* FIN CONFIGURACION DEL FOOTER */
 
 
