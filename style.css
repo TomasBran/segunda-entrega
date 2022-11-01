@@ -31,33 +31,71 @@ body{
     margin: 20px;
 }
 
+.lane-buttons a:nth-child(5){
+    padding-bottom: 50px;
+}
+
 .lane:hover{
     transform: scale(1.1);
     background-color: rgba(240, 248, 255, 0.212);
 }
 /* FIN CONFIGURACION DEL MAIN EN INDEX */
 
+
+/* CONFIGURACION MAIN EN LINEAS */
 .lane-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    padding-bottom: 60px;
 }
 .lane-item{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
 }
-
 .items-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap:10px;
     padding: 5px;
-    border: solid rgba(136, 136, 136, 0.767) 4px ;
+    justify-content: center;
+    align-items: center;
 }
+.runes-grid div{
+    height: 64px;
+    width: 64px;
+}
+.runes-grid img{
+    height: 64px;
+    width: 64px;
+}
+.runes-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding-top: 10px;
+    gap: 10px;
+}
+
+.div1 { grid-area: 1 / 3 / 2 / 4; }
+.div2 { grid-area: 2 / 2 / 3 / 3; }
+.div3 { grid-area: 2 / 3 / 3 / 4; }
+.div4 { grid-area: 2 / 4 / 3 / 5; }
+.div5 { grid-area: 3 / 2 / 4 / 3; }
+.div6 { grid-area: 3 / 4 / 4 / 5; }
+
+.items-grid img:hover, .runes-grid img:hover{
+    transform: scale(1.2);
+    transition: all 0.45s;
+}
+/* FIN CONFIGURACION MAIN EN LINEAS */
 
 
 
@@ -79,3 +117,26 @@ footer{
     font-size: 180%;
 }
 /* FIN CONFIGURACION DEL FOOTER */
+
+
+/* ADAPTABILIDAD A PANTALLAS MAS CHICAS */
+@media only screen and (max-width: 850px){
+    .lane-container{
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .lane-item{
+        border-bottom: 2px solid white;
+        border-top: 2px solid white;
+        border-left: 0px;
+        border-right: 0px;
+        margin:10px 0px;
+    }
+}
+@media only screen and (max-width: 830px){
+    .lane-buttons img{
+        width: 80%;
+    }
+}
+/* FIN ADAPTABILIDAD A PANTALLAS MAS CHICAS */
